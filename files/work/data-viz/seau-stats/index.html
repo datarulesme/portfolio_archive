@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		 <link rel="stylesheet" href="style.css">
-		<script src="https://d3js.org/d3.v5.min.js"></script>
+		<script src="https://d3js.org/d3.v3.min.js"></script>
 		<script src="https://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
 	</head>
 	<body>
@@ -41,7 +41,7 @@ var margin = {top: 35, right: 40, bottom: 50, left: 45},
 
 // setup x 
 var xValue = function(d) { return d.ap1;}, // data -> value
-    xScale = d3.scale.scaleLinear()
+    xScale = d3.scale.linear()
     .range([0, width]), // value -> display
     
     xMap = function(d) { return xScale(xValue(d));}, // data -> display
@@ -50,7 +50,7 @@ var xValue = function(d) { return d.ap1;}, // data -> value
 
 // setup y
 var yValue = function(d) { return d.pb;}, // data -> value
-    yScale = d3.scale.scaleLinear()
+    yScale = d3.scale.linear()
     .range([height, 0]), // value -> display
     
     yMap = function(d) { return yScale(yValue(d));}, // data -> display
@@ -248,7 +248,7 @@ var margin2 = {top: 10, right: 70, bottom: 30, left: 30},
 var x2 = d3.scale.ordinal()
     .rangeRoundBands([0, width2], .05);
 
-var y2 = d3.scale.scaleLinear()
+var y2 = d3.scale.linear()
     .range([height2, 0])
 
 var xAxis2 = d3.svg.axis()
