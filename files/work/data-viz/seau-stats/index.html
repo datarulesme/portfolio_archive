@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		 <link rel="stylesheet" href="style.css">
-		<script src="d3.js"></script>
-		<script src="https://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+		<script src="http://d3js.org/d3.v3.min.js"></script>
+		<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
 	</head>
 	<body>
 		<div id="wrap">
@@ -14,7 +14,7 @@
           	<div class="dvoa"></div>
             
             
-            <p class="foot">* Developed by <a href="https://www.footballoutsiders.com/">Football Outsiders</a> the <a href="https://www.footballoutsiders.com/info/methods#DVOA">Defense-adjusted Value Over Average</a> or "DVOA" is a statistic that "measures a team's efficiency by comparing success on every single play to a league average based on situation and opponent" and effectively shows the strength of a given team's defense during a given season.</p>
+            <p class="foot">* Developed by <a href="http://www.footballoutsiders.com/">Football Outsiders</a> the <a href="http://www.footballoutsiders.com/info/methods#DVOA">Defense-adjusted Value Over Average</a> or "DVOA" is a statistic that "measures a team's efficiency by comparing success on every single play to a league average based on situation and opponent" and effectively shows the strength of a given team's defense during a given season.</p>
           
             
             <h1 class="spacer"> How Seau Stacks Up Against Other Notable Linebackers</h1>
@@ -41,7 +41,7 @@ var margin = {top: 35, right: 40, bottom: 50, left: 45},
 
 // setup x 
 var xValue = function(d) { return d.ap1;}, // data -> value
-    xScale = d3.scaleLinear();
+    xScale = d3.scale.linear()
     .range([0, width]), // value -> display
     
     xMap = function(d) { return xScale(xValue(d));}, // data -> display
@@ -50,7 +50,7 @@ var xValue = function(d) { return d.ap1;}, // data -> value
 
 // setup y
 var yValue = function(d) { return d.pb;}, // data -> value
-    yScale = d3.scaleLinear();
+    yScale = d3.scale.linear()
     .range([height, 0]), // value -> display
     
     yMap = function(d) { return yScale(yValue(d));}, // data -> display
@@ -248,7 +248,7 @@ var margin2 = {top: 10, right: 70, bottom: 30, left: 30},
 var x2 = d3.scale.ordinal()
     .rangeRoundBands([0, width2], .05);
 
-var y2 = d3.scaleLinear();
+var y2 = d3.scale.linear()
     .range([height2, 0])
 
 var xAxis2 = d3.svg.axis()

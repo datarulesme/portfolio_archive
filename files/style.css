@@ -142,7 +142,7 @@ iframe {
 
 .prisoners {
   width: 960px;
-  height: 1800px;
+  height: 2100px;
   margin: 0 auto;
 }
 
@@ -167,7 +167,7 @@ iframe {
 
 .san-mateo {
   width: 970px;
-  height: 750px;
+  height: 1150px;
   margin: 0 auto;
 }
 
@@ -192,7 +192,7 @@ iframe {
 
 .nuclear {
   width: 970px;
-  height: 1000px;
+  height: 2000px;
   margin: 0 auto;
 }
 
@@ -217,7 +217,7 @@ iframe {
 
 .pope {
   width: 970px;
-  height: 2050px;
+  height: 2150px;
   margin: 0 auto;
 }
 
@@ -243,13 +243,13 @@ iframe {
 
  .seau {
   width: 970px;
-  height: 1550px;
+  height: 1250px;
   margin: 0 auto;
 }
 
 .seauViz {
   width: 970px;
-  height: 1350px;
+  height: 1250px;
   float: left;
   margin-left: 150px;
  }
@@ -263,7 +263,7 @@ iframe {
 
 .seauHolder {
   width: 970px;
-  height: 600px;
+  height: 500px;
   float: left;
  }
 .tickertapeViz {
@@ -282,13 +282,13 @@ iframe {
 
 .superbowl {
   width: 970px;
-  height: 1350px;
+  height: 1150px;
   margin: 0 auto;
 }
 
 .superbowlViz {
   width: 970px;
-  height: 1350px;
+  height: 1210px;
   float: left;
  }
 
